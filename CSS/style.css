@@ -1,0 +1,384 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Signika', sans-serif;
+}
+#top-col{
+    height: 15vh;
+    background: #06173E;
+    padding: 0.5em 1em;
+}
+.navbar{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2em;
+    padding: 1em;
+}
+.nav-items{
+    list-style: none;
+    display: flex; 
+    align-items: center;   
+}
+a{
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;    
+}
+a:hover{
+    color: #7EA7FE;
+}
+#banner{
+    height: 120vh;
+    background-image: url("https://res.cloudinary.com/nseabasi/image/upload/v1617821691/banner_axmck7.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /* animation: slide 5s ease-in-out 5s infinite alternate; */
+}
+#banner:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 9, 54, 0.6);
+}
+
+.container{
+    padding: 3em;
+}
+.container p, .container h2{
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+.top-para{
+    margin-top: 1em;
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-decoration-color: #bceb4e;
+}
+.top-h2{
+    margin-top: 1em;
+    font-size: 50px;
+}
+.top-para2{
+    margin-top: 2em;
+}
+.top-button{
+    margin: 5em 1em;
+    background: #2ee99b;
+    width: 230px;
+    height: 77px;
+    border: none;
+    border-radius: 5em;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+.top-button:hover{
+    color: #4ED8C1;
+    background: #06173E;
+}
+.top-button img{
+    margin-right: 5px;
+}
+.contain{
+    text-align: center;
+    margin: 5em 10em;
+}
+.one{
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-decoration-color: #bceb4e;
+}
+#third h1{
+    margin: 00.5em;
+    font-size: 40px;
+}
+.two{
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+.photos{
+    text-align: center;
+}
+.one{
+    text-align: center;
+    margin-top: 10em;
+}
+.card-area1, .card-area2{
+    display: flex;
+    margin: 0 10em;
+}
+.cards{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 50%;
+    font-size: 14px;
+    line-height: 25px;
+    background: #0B1B47;
+    border-radius: 20px;
+    margin: 3em;
+    padding-bottom: 2em;
+}
+.cards div{
+    display: inline-block;
+    margin: 2em;
+}
+.hot{
+    float: right;
+    color: white;
+    margin: 1em;
+    font-weight: bold;
+}
+.cards ul{
+    margin-top: 3em;
+}
+.cards ul li{
+    margin-left: 9em;
+    color: #7EA7FE;
+}
+hr{
+    width: 20em;
+    margin-top: -5em;
+    margin-left: 9em;
+    background-color: rgb(172, 172, 173);
+}
+.icons{
+    margin-left: 7.5em;
+    margin-top: 2.5em;
+}
+.last-para{
+    margin-left: 8em;
+    margin-top: -0.5em;
+    font-weight: 300;
+    color: #ffffff;
+}
+.last-para2{
+    margin-left: 8em;
+    margin-top: -0.5em;
+    font-weight: 300;
+    color: #d8d7d7;
+}
+.news{
+    display: flex;
+    justify-content: space-evenly;
+}
+.news-cards{
+    width: 25%;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    line-height: 25px;
+    padding-top: 2em;
+    margin-bottom: 2em;
+    border: 1px solid rgb(228, 227, 227);
+}
+.news-cards p{
+    text-align: justify;
+    margin: 1em 3em;
+}
+#footer{
+    background-image: url("https://res.cloudinary.com/nseabasi/image/upload/v1617975776/meeting2_1_fsrzin.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin-top: 10em;
+    position: relative;
+}
+#footer:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(3, 5, 48, 0.9);
+}
+.footer{
+    position: relative;
+    z-index: 1;
+    margin: 5em;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+form{
+    margin-top: 6em;
+}
+form input, textarea{
+    width: 90%;
+}
+input{
+    height: 50px;
+    margin-bottom: 1em;
+}
+form label{
+    color: #7EA7FE;
+}
+form button{
+    margin: 0.5em 0;
+    background-color: #4ed8c1;
+    width: 10em;
+    height: 3em;
+    border: none;
+    border-radius: 5em;
+    color: white;
+    cursor: pointer;
+}
+form button:hover{
+    color: #ffffff;
+    background-color: #7EA7FE;
+}
+.footer-icons{
+    margin: 30px 10px;
+}
+.footer-div-one h1{
+    font-size: 40px;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+.built{
+    margin-top: 10em;
+    font-size: 20px;
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-transform: uppercase;
+    text-decoration-color: #bceb4e;
+}
+@keyframes slide {
+    from{
+        margin-left: 60%;
+        width: 150%;
+    }
+    75%{
+        font-size: 200px;
+        margin-left: 25px;
+        width: 200%;
+        background-color: #7EA7FE;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+@media screen and (max-width:600px){
+    .nav-items{
+        display: none;
+    }
+    #banner{
+        padding-top: 2em;
+        height: 60vh;
+        background-size: cover;
+    }
+    
+    .top-para{
+        font-size: 1em;
+        margin: 2px;
+    }
+    .top-h2{
+        font-size: 1em;
+    }
+    .top-para2{
+        font-size: 0.5em;
+    }
+    .top-button{
+        width: 15em;
+        height: 5em;
+        /* margin: 40px 0; */
+        font-size: 0.6em;
+        padding: 1em;
+    }
+    .top-button img{
+        width: 8px;
+    }
+    #third{
+        height: 40vh;
+    }
+    .contain{
+        margin: 2em;
+    }
+    .one{
+        font-size: 1em;
+        margin-top: 3em;
+    }
+    .two{
+        font-size: 0.75em;
+    }
+    #third h1{
+        font-size: 1em;
+        margin-top: 1em;
+    }
+    .photos img{
+        width: 80px;
+    }
+    .photos{
+        display: flex;
+        justify-content: center;
+        margin-bottom: -300px;
+    }
+   
+    .card-area1, .card-area2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-area2{
+        margin-bottom: 2px;
+    }
+    .cards{
+        width: 280px;
+        font-size: 0.5em;
+        line-height: 20px;
+
+    }
+    .cards img{
+        width: 50px;
+    }
+    #news{
+        height: 300vh;
+    }
+    .news{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .news-cards{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #footer{
+        margin-top: -10em;
+    }
+    .footer{
+        display: block;
+        text-align: center;
+    }
+    .footer-div-one h1, .footer-div-one p{
+        font-size: 0.8em;
+    }
+    .footer-div-one .built{
+        padding-top: 3em;
+        font-size: 0.8em;
+    }
+    form{
+        margin-top: 2em;
+    }
+    
+}
+
+    
